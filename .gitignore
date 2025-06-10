@@ -1,0 +1,83 @@
+# Anchor/Solana specific
+.anchor/
+.DS_Store
+target/
+**/*.rs.bk
+test-ledger/
+.yarn/
+
+ALT.js
+base.js
+ini.js
+referv4.js
+
+# Dependency directories (should never be committed)
+node_modules/
+node_modules
+**/node_modules/
+
+# Build files
+dist/
+build/
+
+# Private keys and wallets - SECURITY CRITICAL
+**/*.keypair
+**/*keypair*.json
+**/*wallet*.json
+**/id.json
+**/wallet_generation.js
+**/view_user.js
+
+# Client directory
+client/
+
+# Backup files
+backups/
+**/backups/*.json
+**/backups/*.key
+**/backups/*.pem
+**/backups/*.secret
+**/backups/*.keypair
+**/.gitignore.bak*
+
+# Environment files
+.env
+.env.*
+**/.env*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secret files
+*.pem
+*.key
+*.secret
+
+# Deployment scripts (if you don't want them tracked)
+automated-deploy.sh
+automated-deploy2.sh
+transfer-buffer-auto-at-deploy.sh
+
+# Compiled Solana programs
+**/*.so
+program_dump.so
+
+# Allow specific JSON files
+!**/package.json
+!**/package-lock.json
+!**/tsconfig.json
+!**/token-metadata.json
+
+# Unnecessary files that might contain sensitive information
+**/ripemd160.*
+**/pubkey.*
+**/keypair.*
